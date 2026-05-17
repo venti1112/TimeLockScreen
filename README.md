@@ -53,7 +53,7 @@ pythonw main.pyw
 
 ```bash
 pip install pyinstaller
-pyinstaller --noconsole --onefile --uac-admin --icon=lock_icon.ico --add-data "icon.ico;." main.pyw
+pyinstaller --noconsole --onefile --uac-admin --icon=icon.ico --add-data "icon.ico;." main.pyw
 ```
 
 ## 使用指南
