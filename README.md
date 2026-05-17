@@ -34,6 +34,7 @@
 - 管理员权限（程序自动请求）
 
 ### 安装依赖
+
 ```bash
 pip install -r requirements.txt
 ```
@@ -41,7 +42,7 @@ pip install -r requirements.txt
 ### 从源码运行
 
 ```bash
-python main.pyw
+pythonw main.pyw
 ```
 
 首次运行可能触发 UAC 弹窗请求管理员权限，请允许。
@@ -153,7 +154,7 @@ pyinstaller --noconsole --onefile --uac-admin --icon=lock_icon.ico --add-data "i
 - `RuleDialog`：规则编辑对话框
 - `MainWindow`：主窗口，管理规则列表、监控循环、系统托盘、会话通知和自启
 
-监控通过每秒定时器触发，比对当前时间与所有规则，取最早结束时间进行锁定。
+监控通过每秒定时器触发，比对当前时间与所有规则，若有匹配项，则进行锁定。
 
 ## 许可证
 
